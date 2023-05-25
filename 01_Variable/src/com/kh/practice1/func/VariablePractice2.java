@@ -3,6 +3,7 @@ package com.kh.practice1.func;
 import java.util.Scanner;
 
 public class VariablePractice2 {
+	
 	public void VariablePractice () {
 						   
 		        Scanner scanner = new Scanner(System.in);
