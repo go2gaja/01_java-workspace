@@ -69,7 +69,8 @@ public class B_KeyboardInput {
 		System.out.println("키");
 		double height =sc.nextDouble();
 		
-		System.out.println(name+"님은"+age+"살이며"+address+"살고"+height+"입니다");
+		System.out.printf("%s님은%d살이며%s에살고%fcm이다",name,age,address,height);
+		
 		
 		sc.close();
 			

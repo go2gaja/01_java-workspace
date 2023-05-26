@@ -2,7 +2,7 @@ package com.kh.practice1.func.VariablePractice1;
 
 
 import java.util.Scanner;
-public class VariablePractice1 {
+public class VariablePractice1 { 
 	
 	public void VariablePractice() {
 		Scanner scanner = new Scanner(System.in);
