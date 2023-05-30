@@ -153,14 +153,161 @@ public class OperatorPractice {
 		합격
 		*/
 		Scanner sc = new Scanner(System.in);
-		System.out.println("국어:");
+		System.out.print("국어:");
 		int korean = sc.nextInt();
 		
+		System.out.print("영어:");
+		int english = sc.nextInt();
 		
+		System.out.print("수학:");
+		int math = sc.nextInt();
+		
+		int T = korean + english + math;
+		double total = 180;
+		double average = total / 3.0;
+	    String p= (korean >= 40 && english >= 40 && math >= 40 && average >= 60) ? "합격" : "불합격";
+	    System.out.printf("합계 : %s\n", total);
+        System.out.printf("평균 : %.1f\n", average);
+        System.out.println(p);
+    }
+	
+	
+	
+	public void practice8() {
+		/*주민번호를 이용하여 남자인지 여자인지 구분하여 출력하세요.
+		ex. 
+		주민번호를 입력하세요(- 포함) : 132456-2123456
+		여자*/
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("주민번호를 입력하세요(- 포함) : ");
+		String id = sc.nextLine();
+
+		char gender = id.charAt(7);
+
+		String result = (gender == '1' || gender == '3') ? "남자" : "여자";
+		System.out.println(result);
+		   
+	}
+			public void practice9 () {
+				
+			/*키보드로 정수 두 개를 입력 받아 각각 변수(num1, num2)에 저장하세요.
+			그리고 또 다른 정수를 입력 받아 그 수가 num1 이하거나 num2 초과이면 true를 출력하고
+			아니면 false를 출력하세요.
+			(단, num1은 num2보다 작아야 함)
+			ex.
+			정수1 : 4
+			정수2 : 11
+			입력 : 13
+			true	 	
+			 */
+				Scanner sc = new Scanner(System.in);
+				
+				System.out.print("정수1 :");
+				int num1 = sc.nextInt();
+				
+				System.out.print("정수2 :");
+				int num2 = sc.nextInt();
+				
+				System.out.print("입력 : ");
+		        int input = sc.nextInt();
+		        
+		       boolean result = (input<=num1 || num2<=input);
+		       System.out.println(result);
+				
+				
+				
+			}
+	
+			public void practice10 () {
+				/*
+				3개의 수를 키보드로 입력 받아 입력 받은 수가 모두 같으면 true, 아니면 false를 출력하세요.
+				ex.
+				입력1 : 5
+				입력2 : -8
+				입력3 : 5
+				false
+				*/
+				Scanner sc = new Scanner(System.in);
+				
+				System.out.print("입력1:");
+				int num1 = sc.nextInt();
+				
+				System.out.print("입력2:");
+				int num2 =sc.nextInt();
+				
+				System.out.print("입력3:");
+				int num3 = sc.nextInt();
+				
+
+		        boolean result = (num1 == num2 && num2 == num3);
+		        System.out.println(result);
+				
+				
+			}
+			
+			public void practice11 ( ) {
+				/*A, B, C 사원의 연봉을 입력 받고 각 사원의 연봉과 인센티브를 포함한 연봉을 계산하여 출력하고
+				인센티브 포함 급여가 3000만원 이상이면 “3000 이상”, 미만이면 “3000 미만”을 출력하세요.
+				(A 사원의 인센티브는 0.4, B 사원의 인센티브는 없으며, C 사원의 인센티브는 0.15)
+				ex.
+				A사원의 연봉 : 2500
+				B사원의 연봉 : 2900
+				C사원의 연봉 : 2600
+				A사원 연봉/연봉+a : 2500/3500.0
+				3000 이상
+				B사원 연봉/연봉+a : 2900/2900.0
+				3000 미만
+				C사원 연봉/연봉+a : 2600/2989.9999999999995
+				3000 미만	
+				*/
+				Scanner sc = new Scanner(System.in);		
+				
+				System.out.print("A사원 :");//인센티브 0.4
+				double s1 =sc.nextDouble();
+				double t1 =s1+s1*0.4;
+				
+				System.out.print("B사원 :");//인센티브x
+				double s2 =sc.nextDouble();
+				double t2 =s2;
+				
+				System.out.print("C사원 :");//인센티브0.15
+				double s3 = sc.nextDouble();
+				double t3 = s3+s3*0.15;
+				
+				System.out.printf("A사원/연봉+a : %.1f/%.1f\n", s1, t1);
+			        System.out.println(t1 >= 3000 ? "3000 이상" : "3000 미만");
+
+			        System.out.printf("B사원 연봉/연봉+a : %.1f/%.1f\n", s2, t2);
+			        System.out.println(t2 >= 3000 ? "3000 이상" : "3000 미만");
+
+			        System.out.printf("C사원 연봉/연봉+a : %.1f/%.1f\n", s3, t3);
+			        System.out.println(t3 >= 3000 ? "3000 이상" : "3000 미만");
+				
+				
+				
+				
+				
+			}
+			
+			
 	}
 	
+		
+
+		
+
+		
+
+		
+		    
+		
+
+		
+		
 	
 	
 	
 	
-}
+	
+	
