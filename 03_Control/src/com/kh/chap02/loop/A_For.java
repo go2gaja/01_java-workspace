@@ -345,9 +345,14 @@ public class A_For {
 	            System.out.println();
 			}
 			
-			
-			
 		}
+			public void method18() {
+				for(;;) { //조건식 자리 생략시 기본적으로 true >무한 반복문
+				System.out.println("안녕");
+				
+				}
+			}
+		
 }
 
 		
