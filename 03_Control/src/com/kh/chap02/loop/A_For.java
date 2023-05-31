@@ -128,22 +128,29 @@ public class A_For {
 			//사용자에게 값을 입력 받아 1부터 입력받은 수까지의 합꼐 출력
 			Scanner sc =new Scanner(System.in);
 			
-			System.out.print("1이상의 정수 :");
-			int num =sc.nextInt();
-			
-			if(num>0) {
-				//누적합
-				//1.sum 변수 만들기
-				//2.for 문 돌리기
-				int sum=0;
-				for(int i=1;i<=num;i++) {
-					sum +=i;//누적합 공식 모르면 외울것
+			while(true) {
+				System.out.print("1이상의 정수 :");
+				int num =sc.nextInt();
+				
+				if(num>0) {
+					//누적합
+					//1.sum 변수 만들기
+					//2.for 문 돌리기
+					int sum=0;
+					for(int i=1;i<=num;i++) {
+						sum +=i;//누적합 공식 모르면 외울것
+					}
+					System.out.println("1부터"+num+"까지의 합 :"+sum);
+					break;
+					
+				}else {
+					System.out.println("잘못입력했습니다. 다시 입력해주세요" );
 				}
-				System.out.println("1부터"+num+"까지의 합 :"+sum);
-			}else {
-				System.out.println("잘못입력했습니다");
+					
 			}
 			
+			
+					
 			
 		}
 		public void method8 () {

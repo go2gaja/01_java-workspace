@@ -101,9 +101,144 @@ public class ControlPractice {
      }
 
      sc.close();
+}
+       
+	 public void practice5 () {
+		
+		 Scanner sc= new Scanner(System.in);
+		 
+		 System.out.print("아디 :");
+		 String id =sc.nextLine();
+		 
+		 System.out.print("비번 :");
+		 String pw =sc.nextLine();
+		 
+		 String id1 ="myId";
+		 String pw1= "myPassword12";
+		 
+		 
+		  
+		 if(id.equals(id1)) {
+		    if(pw.equals(pw1)) {
+				 System.out.println("로그인성공");
+			 }else {
+				 System.out.println("비밀번호가 틀렸습니다");
+			 }
+			 
+		 }else {
+			 System.out.println("아이디가 틀렸습니다");
+		 }
+		 
+		 
+		 sc.close();
 	 }
-            
-}	
+	 
+	 public void practice6( ) {
+		 //과일 계산 
+		 Scanner sc = new Scanner(System.in);
+		 System.out.println("권한을 확인하고자 하는 회원 등급:(관리자,회원,비회원)");
+		 
+		  
+		 
+		 String privilege =sc.nextLine();
+		 
+		 switch (privilege) {
+		 case "관리자":
+			 System.out.println("회원관리, 게시글 관리,");
+			 
+		 case  "회원" :
+			 System.out.println("게시글 작성,댓글 작성");
+			
+		 case "비회원" :
+			 System.out.println("게시글 조회");
+		 	 
+		 
+		 
+		 
+		 }
+		 
+		 
+	 }
+	 public void practice7( ) {
+		 Scanner sc = new Scanner(System.in);
+		 System.out.print("키(m)를 입력해 주세요 : ");
+	     double height = sc.nextDouble();
+	     System.out.print("몸무게(kg)를 입력해 주세요 : ");
+	     double weight = sc.nextDouble();
+
+	     double bmi = weight / (height * height);
+	     System.out.println("BMI 지수 : " + bmi);
+
+	     if (bmi < 18.5) {
+	    	 	System.out.println("저체중");
+	     } else if (bmi >= 18.5 && bmi < 23) {
+	            System.out.println("정상체중");
+	     } else if (bmi >= 23 && bmi < 25) {
+	            System.out.println("과체중");
+	     } else if (bmi >= 25 && bmi < 30) {
+	            System.out.println("비만");
+	     } else {
+	            System.out.println("고도 비만");
+	     }
+	}
+	 public void practice8( ) {
+		 
+		 Scanner sc = new Scanner(System.in);
+		 
+		
+		System.out.print("피연산자1 입력 : ");
+		int operand1 = sc.nextInt();
+		System.out.print("피연산자2 입력 : ");
+		int operand2 = sc.nextInt();
+		System.out.print("연산자를 입력(+,-,*,/,%) : ");
+		String operator = sc.next();
+
+		if (operand1 <= 0 || operand2 <= 0) {
+		             System.out.println("양수만 입력해주세요.");
+		           
+		         }
+
+		         switch (operator) {
+		             case "+":
+		                 System.out.println(operand1 + " + " + operand2 + " = " + (operand1 + operand2));
+		                 break;
+		             case "-":
+		                 System.out.println(operand1 + " - " + operand2 + " = " + (operand1 - operand2));
+		                 break;
+		             case "*":
+		                 System.out.println(operand1 + " * " + operand2 + " = " + (operand1 * operand2));
+		                 break;
+		             case "/":
+		                 System.out.println(operand1 + " / " + operand2 + " = " + (double)operand1 / operand2);
+		                 break;
+		             case "%":
+		                 System.out.println(operand1 + " % " + operand2 + " = " + (operand1 % operand2));
+		                 break;
+		             default:
+		                 System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
+		                 break;
+		         }
+		     }
+		
+
+    
+		
+		}
+		 
+		 
+		 	
+		 
+
+
+		 
+		 
+		 
+
+	 
+	 
+	 
+	 
+	 	
 		        
        
 	
