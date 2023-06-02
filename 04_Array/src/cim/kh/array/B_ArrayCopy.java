@@ -174,12 +174,12 @@ public class B_ArrayCopy {
 			
 			
 			
+		
 			
 			
 			
 			
-			
-		}
+}
 		
 
 	
