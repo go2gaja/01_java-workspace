@@ -293,7 +293,178 @@ public class A_ArrayPractice {
     }
 
 		
+	
+	public void method12() {
+		// 스캐너 선언 , 정수 2개 입력, 연산자 1개 입력, 무한반복문 돌리기
+		Scanner sc = new Scanner(System.in);//스캐너 선언
+		
+		while(true) {//무한 반복
+			
+		System.out.print("연산자(+,-,*,/,%) :");
+		String op = sc.nextLine();
+		
+		if(op.equals("exit")) {
+			System.out.println("프로그램을 종료합니다.");
+			break;
+		}
+			
+		//1-1
+		System.out.print("정수1 :");
+		int num1 = sc.nextInt();
+		
+		System.out.print("정수2 :");
+		int num2 = sc.nextInt();
+		
+		sc.nextLine();
+		
+		
+		//2 나눗셈 이면서
+		
+		if(op.equals("/")&&num2==0) {
+			System.out.println("0으로 나눌수 없습니다. 다시입력해주세요");
+			continue;
+			
+		}
+	
+		
+		switch(op) {
+		
+		case "+" :
+			System.out.printf("%d%s%d=%d\n",num1,op,num2,(num1+num2));
+			break;
+		case "-" :	
+			System.out.printf("%d%s%d=%d\n",num1,op,num2,(num1-num2));
+			break;
+		case "/" :	
+			System.out.printf("%d%s%d=%d\n",num1,op,num2,(num1/num2));
+			break;
+		case "%" :	
+			System.out.printf("%d%s%d=%d\n",num1,op,num2,(num1%num2));
+			break;
+		case "*" :
+			System.out.printf("%d%s%d=%d\n",num1,op,num2,(num1*num2));
+			break;
+		default :
+			System.out.println("없는 여 ㄴ산자입니다.다시 입력해주세요");
+			
+			
+			
+			
+			
+			
+		}
+			
+			
+			
+			
+			
+		}
+			
+			
+			
+		}
+		
+		public void rps () {
+			Scanner sc = new Scanner(System.in);
+			//필요한 자원 >변수
+			int total = 0; //전
+			int win = 0; //승
+			int tie= 0;// 무
+			int lose= 0;//패
+			
+			System.out.print("당신의 이름을 입력해주세요 :");
+			
+			
+			
+			
+		}
+		
+		public void method15() {
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.print("문자열 :");
+			String str=sc.nextLine();
+			
+			char [] arr = new char[str.length()];
+			int count = 0;//문자 개수 출력
+			
+			System.out.print("문자열에 있는 문자:");
+			
+			for(int i=0; i<arr.length;i++) {//carh 배열 값 대입
+				arr[i] = str.charAt(i);
+				
+				//중복 제거? 출력?apple>>aple
+				boolean flag = true;//굉장히 어렵다
+				for(int j=0;j<i;j++) {
+					if(arr[j]==arr[i]) {
+						flag=false;
+					}
+				}
+				
+				if(flag==true/*flag==true*/) {
+					count++;
+					if(i==0) {
+						System.out.print(arr[i]);
+						
+					}else {
+						System.out.print(", "+arr[i]);
+					}
+					
+					System.out.print(arr[i]);
+				}
+			}
+			
+			
+		}
+		public void method16() {
+			Scanner sc= new Scanner(System.in);
+			
+			System.out.print("배열의 크기를 입력하세요 :");
+			int num = sc.nextInt();
+			
+			String[] origin =new String[num];
+			String[] copy = null;
+			
+			for(int i=0; i <origin.length; i++) {
+				
+				System.out.printf("%d번째 문자열 :",i+1);
+			origin[i] = sc.nextLine();
+						
+			}
+			
+			while(true) {
+				System.out.print("더 값을 입력하시겠습니까?(Y/N :" );
+				char ch = sc.nextLine().charAt(0);//y Y n N
+				
+				
+			if(ch=='y'||ch=='Y') {//더 입력하겠다는 경우
+				System.out.print("더 입력하고 싶은 개수:");
+				sc.nextInt();
+				
+				copy =Arrays.copyOf(origin,origin.length+num);
+			for(int i=0; i<copy.length;i++) {//마지막 인덱스인경우
+				
+				System.out.printf("%S",copy[i]);
+				copy[i]=sc.nextLine();
+			}
+				
+			}else {//그만 하는경우
+				
+			}
+			
+			
+		}
+		
+		
+		
+		
+		
+		
 	}
+
+}	
+	
+
 	
 
 
