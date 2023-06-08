@@ -6,7 +6,10 @@ public class ConstructorRun {
 
 	public static void main(String[] args) {
 		//1.기본생성자로 객체 생성
-		User u1= new User();
+		User u1 = new User();
+		
+		
+		
 		System.out.println(u1.information());
 		//각 필드에 JVM초기값들 담겨있음
 		

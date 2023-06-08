@@ -5,13 +5,6 @@ public class User {
 	
 	//필드부
 	
-	
-	
-	private String userId;
-	private String UserPwd;
-	private String UserName;
-	private int age;
-	private char gender;
 	/*
 	 * 생성자
 	 * public 클래스명(매개변수...){
@@ -27,13 +20,20 @@ public class User {
 	 *  3. 매개변수 생성자를 명시적으로 작성하게 되면 기본 생성자를 JVM이 자동으로 만들어주지 않음
 	 *  즉 어찌됐던 간에 기본 생성자는 항상 작성하는 습관을 들이는게 좋다
 	 */
+	//기본 생성자>>매개변수 없는 생성자
+			//단지 객체 생성만을 목적으로 할 때 사용함
+			//System.out.println("이거되나?");
+			//기본생성자를 생략했을 경우>>"JVM"이 자동으로 만들어줬기 때문에 항상 객체생성 가능
+	private String userId;
+	private String UserPwd;
+	private String UserName;
+	private int age;
+	private char gender;
+	
 	
 	public User() {
-		//기본 생성자>>매개변수 없는 생성자
-		//단지 객체 생성만을 목적으로 할 때 사용함
-		//System.out.println("이거되나?");
-		//기본생성자를 생략했을 경우>>"JVM"이 자동으로 만들어줬기 때문에 항상 객체생성 가능
 	}
+	
 	
 	//매개변수 생성자
 	//객체 생성과 동시에 전달값들을 매개변수로 받아서 해당 각 필드에 초기화 할 목적초파

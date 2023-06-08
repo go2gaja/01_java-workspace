@@ -1,13 +1,13 @@
 package com.hw1.model.vo;
 
 public class Product {
-	
+	//필드부
 			private String productId; //samepleId
 			private String productName;//sameple
 			private String productArea;//생산지
 			private int price;//$
 			private double tax;//부가세
-			
+	//생성자부 (기본+전체)>>전체 생성자		
 		public Product(String productId, String productName, String productArea, int price, double tax) {
 		        this.productId = productId;
 		        this.productName = productName;
@@ -17,9 +17,11 @@ public class Product {
 		    }
 		    
 		public String information() {
-			return "productId :"+ productId+"productName :"+productName+"productArea"+
-					productArea+"price :"+price+"tax :"+tax;
+			return "productId :"+ productId+" ,productName :"+productName+" ,productArea"+
+					productArea+" ,price :"+price+" ,tax :"+tax;
 					
+		//메소드부
+		//get set >> 한세트로 작성
 			
 		}
 		public String getprouctId() {
@@ -53,7 +55,12 @@ public class Product {
 		public void setTax(double tax ) {
 			this.tax=tax;
 		}
-
+		
+		
+		
+		public int getTaxPrice() {
+			return (int)(this.price+(this.price*this.tax));
+		}
 		
 
 

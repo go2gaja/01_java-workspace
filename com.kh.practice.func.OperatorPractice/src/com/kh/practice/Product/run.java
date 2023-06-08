@@ -3,6 +3,7 @@ package com.kh.practice.Product;
 public class run {
 
 	public static void main(String[] args) {
+		/*
 		Product pro =new Product();
 		
 		Product product = new Product();
@@ -18,4 +19,4 @@ public class run {
 		
 	}
 
-
+*/
