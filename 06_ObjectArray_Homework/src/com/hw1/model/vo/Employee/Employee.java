@@ -1,7 +1,7 @@
 package com.hw1.model.vo.Employee;
 
 public class Employee {
-	private int empNo;//사번
+	public int empNo;//사번
 	private String empName;//사원명
 	private String dept;//소속부서
 	private String job;//직급
@@ -41,7 +41,7 @@ public class Employee {
 	}
 	
 	 public String information() {
-	        return "사번 :" +empNo+",사원명 :"+empName+",소속부서 :"+dept+",직급 :"+job+",나이:"+age+",성별 :"+gender+",급여 :"+slary+",보너스포인트:"+bonusPoint+",전화번호 :"+phone+",주소"+address;
+	        return empNo+","+empName+","+dept+","+job+","+age+","+gender+","+slary+","+bonusPoint+","+phone+","+address;
 	    }
 	
 	public int getEmpNo() {
@@ -62,7 +62,12 @@ public class Employee {
 	public void setDept(String dept) {
 		this.dept=dept;
 	}
-	public int get() {
+	public String getJob() {
+		return job;
+	}
+	public void setJob(String job) {
+		this.job=job;
+	}public int get() {
 		return age;
 	}
 	public void setAge(int age) {
@@ -101,8 +106,12 @@ public class Employee {
 	
 	
 	
-	public int totalSlary() {
+	public int TotalSlary() {
 		return (int)(this.slary+(this.slary*this.bonusPoint));
+	}
+
+	
+		
 	}
 	
 	
@@ -110,4 +119,4 @@ public class Employee {
 	
 	
 
-}
+

@@ -11,9 +11,7 @@ public class Phone {
 	
 	
 	//기본 생성자
-	public Phone() {
-		
-	}
+	public Phone() {}
 	//매개 변수 생성자
 	public Phone(String name, String brand, int price, String series) {
 		this.name=name;
