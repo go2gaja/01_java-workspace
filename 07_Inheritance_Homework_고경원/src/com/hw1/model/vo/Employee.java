@@ -30,6 +30,7 @@ public class Employee extends Person {
 	public String information() {
 		return super.information()+salary+dept;
 	}
+	@Override
 	public String toString() {
 		return super.toString()+" "+ salary+" "+dept;
 	}

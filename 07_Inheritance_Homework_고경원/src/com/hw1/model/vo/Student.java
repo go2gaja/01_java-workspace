@@ -28,9 +28,7 @@ public class Student extends Person{
 		this.major=major;
 	}
 
-	public String information() {
-		return super.information()+grade+major;
-	}	
+		
 	@Override
 	public String toString() {
 		return super.toString() +  grade+major;

@@ -39,6 +39,7 @@ public class Run {
 		int empC= 0;
 		
 		while(true) {
+		
 			if(empC>=emp.length) {
 				System.out.println("최대 인원을 초과하여 더 이상 입력할 수 없습니다.");
                 break;
@@ -68,10 +69,12 @@ public class Run {
 	            
 	            System.out.print("더 할래? : (y/n)");
 	            char dic = sc.nextLine().charAt(0);
-	            if(dic == 'n')
+	            if(dic == 'n'||empC == 10)
 	            {
 	            	break ;
 	            }
+	            
+	            
 
 		}
 		for (int i = 0 ; i<empC;i++ ) {
