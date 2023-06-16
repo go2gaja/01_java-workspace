@@ -13,6 +13,9 @@ public class A_ArrayPractice {
 	
 	//// 배열의 길이
     //int length = array.length;
+   	/**
+   	 * 
+   	 */
    	public void  method1() {
    		int arr[]=new int[10];//1~10
    		System.out.println("길이가 1~10까지의 값");
