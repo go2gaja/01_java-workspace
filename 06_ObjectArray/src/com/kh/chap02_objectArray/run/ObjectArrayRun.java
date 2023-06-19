@@ -76,4 +76,15 @@ public class ObjectArrayRun {
 		
 	}
 
+	public ObjectArrayRun() {
+		super();
+	
+	}
+
+	@Override
+	public String toString() {
+		return "ObjectArrayRun [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
+
 }
