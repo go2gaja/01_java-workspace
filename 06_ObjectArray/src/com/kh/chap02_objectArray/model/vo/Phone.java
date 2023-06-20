@@ -44,8 +44,12 @@ public class Phone {
 	public void setSeries (String series) {
 		this.series=series;
 	}
-	public char[] information() {
-		return null;
+	public String information() {
+		return name + brand + price + series;
+	}
+	@Override
+	public String toString() {
+		return "Phone [name=" + name + ", brand=" + brand + ", price=" + price + ", series=" + series + "]";
 	}
 	
 	

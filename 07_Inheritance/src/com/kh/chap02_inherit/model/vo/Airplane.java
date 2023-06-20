@@ -29,9 +29,8 @@ public class Airplane extends Vehicle {
 	}
 	
 	@Override
-	
 	public void howToMove() {
-		System.out.println("바퀴를 굴리다가 날개를 움직임.");
+	System.out.println("바퀴를 굴리다가 날개를 움직임.");
 	}
 	
 	
